@@ -26,7 +26,7 @@ const MasonryGallery: React.FC<MasonryGalleryProps> = ({ images }) => {
     };
 
     return (
-        <div>
+        <div className='mt-5 px-2'>
             <div className={'gallery'}>
                 {images.map((image, index) => (
                     <div key={index} className={'galleryItem'} onClick={() => onImageClick(image)}>
